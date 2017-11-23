@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--引入公共的头部部分开始-->
+<!--include是引入文件的关键字-->
+<% include common/header.html%>
+<!--引入公共的头部部分结束-->
+这里是正文
+<% include common/footer.html%>
+
+<table>
+    <thead>
+        <th>ID</th>
+        <th>NAME</th>
+    </thead>
+    <tbody>
+        <%
+            console.log(users);
+            users.forEach(item=>{
+        %>
+                <tr>
+                    <td><%=item.id%></td>
+                    <td><%=item.name%></td>
+                </tr>
+        <%
+        })
+        %>
+        <tr></tr>
+    </tbody>
+</table>
+<!--数组遍历的部分演示开始-->
+<!--数组遍历的部分演示结束-->
+
+</body>
+</html>

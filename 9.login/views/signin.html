@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <form action="/user/signin" method="POST">
+                <div class="form-group">
+                    <label for="username" class="control-label">用户名：</label>
+                    <input class="form-control" id="username" required type="text" name="username"/>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="control-label">密码：</label>
+                    <input class="form-control" required id="password" type="text" name="password"/>
+                </div>
+                <div class="form-group text-center">
+                    <button class="btn btn-primary" type="submit">登录</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
